@@ -1,0 +1,87 @@
+/*
+COLORS
+#222831;//azul marinho escuro
+#2D4059;//azul marinho 
+#D9D9D9;amarelo claro(branco creme)
+#F89406.laranja main
+*/
+
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Varela Round';
+}
+body{
+  background-color: #222831;
+}
+header{
+  height: 60px;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color:#F89406;
+  
+}
+header p{
+  display: table;
+  font-size: 2.5rem;
+}
+.textk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text{
+  margin: 1rem;
+  resize: none;
+  width: 250px;
+  height: 300px;
+  font-size: 1.5rem;
+  padding: 0.5rem;      
+}
+div.text{
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 250px;
+  height: 300px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+
+}
+
+.actionButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.actionButtons button{
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 0.2rem solid #F89406;
+  
+  border-radius: 3px;
+}
+.painted{
+    background-color:#F89406;
+    color: #000000;
+    cursor: pointer;
+}
+.leaked{
+  background-color: transparent;
+  color: #d9d9d9;
+  cursor: pointer;
+}
+.actionButtons button:hover{
+  transform:scale(1,1.1) ;
+}
