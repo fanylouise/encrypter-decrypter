@@ -45,15 +45,21 @@ header p{
   width: 250px;
   height: 300px;
   font-size: 1.5rem;
-  padding: 0.5rem;      
+  padding: 0.5rem;
+  border-radius: 5px;
+
+}
+.text:focus{
+  outline: none;
+  border: 5px solid #F89406;
 }
 div.text{
   margin: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   width: 250px;
   height: 300px;
+  background-color: #F89406;
+  color: #000000;
+  border-radius: 5px;
   font-size: 1.5rem;
   padding: 0.5rem;
 
@@ -65,7 +71,7 @@ div.text{
   align-items: center;
 }
 .actionButtons button{
-  margin: 0.5rem;
+  margin: 1rem;
   font-size: 1.5rem;
   padding: 0.5rem;
   border: 0.2rem solid #F89406;
