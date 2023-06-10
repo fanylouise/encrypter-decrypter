@@ -34,6 +34,12 @@ header p{
   display: table;
   font-size: 2.5rem;
 }
+.obs{
+  color: rgb(190, 55, 55);
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
 .textk{
   display: flex;
   align-items: center;
@@ -68,6 +74,7 @@ div.text{
   margin: 1rem;
   width: 250px;
   height: 300px;
+  overflow-wrap: break-word;
   font-size: 1.5rem;
   padding: 0.5rem;
   border-radius: 5px;
@@ -82,7 +89,8 @@ div.text{
 }
 .copy:hover{
   background-color:rgb(19, 119, 166);
-  color:#d9d9d9 ;
+  color:#000 ;
+  border: transparent;
 }
 
 .actionButtons{
@@ -110,4 +118,36 @@ div.text{
 }
 .actionButtons button:hover{
   transform:scale(1,1.1) ;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer{
+  color: #F89406;
+}
+@media (max-width:620px) {
+  .textk{
+    flex-direction: column;
+  }
+  .textResult, .text{
+    height: 155px;
+  }
+  .obs{
+    font-size: 12px;
+    padding: 5px;
+  }
+  header{
+    height: 50px;
+  }
+  .text{
+    margin: 0;
+  }
+  .actionButtons{
+    margin: 0;
+    padding: 0;
+  }
+
 }

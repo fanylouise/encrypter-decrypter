@@ -1,29 +1,18 @@
-let output = [];
 
-const letters = ["a","e","i","o","u"];
-const rules = ["ai","enter","imes","ober","ufat"];
-const encryptButton = document.querySelector('.encrypt');
-const decryptButton = document.querySelector('.decrypt');
-const textResult = document.querySelector('.textResult')
-let copy = document.querySelector('.copy');
-let text = document.querySelector('.text');
+const encryptButton = document.querySelector('.encrypt')
+const decryptButton = document.querySelector('.decrypt')
+let textResult = document.querySelector('.textResult')
+let copy = document.querySelector('.copy')
+let text = document.querySelector('.text')
 
+let encriptar = () => {
+  textResult.innerHTML = text.value.replaceAll('a', '1').replaceAll('e', '2').replaceAll('i', '3').replaceAll('o', '4').replaceAll('u', '5').replaceAll('1', 'ai').replaceAll('2', 'enter').replaceAll('3','imes').replaceAll('4', 'ober').replaceAll('5', 'ufat')
 
-let pegarTexto = ()=>{
+}
+let decriptar = ()=>{
 
-output = 
-textResult.innerHTML = text.value.replaceAll(letters[0], rules[0]).replaceAll(letters[4], rules[4]).replaceAll(letters[3], rules[3]).replaceAll('e', 'enter');
+  textResult.innerHTML = text.value.replaceAll('ai', 'a').replaceAll('enter', 'e').replaceAll('imes', 'i').replaceAll('ober', 'o').replaceAll('ufat', 'u')
+}
 
-
-  }
- 
-  console.log(output)
-
- encryptButton.addEventListener('mousedown', pegarTexto)
- copy.addEventListener('mousedown', ClipboardEvent )
-
-//1 Ao clicar no botão 'encrypt';OK
-//2 pegar o texto digitado do textarea;OK
-//2.1 transformar o texto digitado em um novo texto a regra é: todas as letras "a","e","i","o","u" das palavras digitadas devem ser trocadas pelas palavras "ai","enter","imes","ober","ufat";
-//3 Devolver texto encriptado para o campo de resposta
-
+encryptButton.addEventListener('mousedown', encriptar)
+decryptButton.addEventListener('mousedown', decriptar)

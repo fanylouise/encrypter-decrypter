@@ -1,7 +1,3 @@
 ### Aprendi
-- Tire o espaço branco de dentro da tag 'textarea, pois não será possível ver o placeholder e aparecerá um espaço fantasma no início ;--;
-
-- Diferença entre usar querySelector x querySelectorAll
-
-- 
+- Tire o espaço branco de dentro da tag 'textarea, pois não será possível ver o placeholder e aparecerá um espaço fantasma no início ;-;
 
